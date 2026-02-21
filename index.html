@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Headlinea - Global News Aggregator for Technology, Economics & World Trends">
+    <title>Headlinea - Global News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Headlinea</h1>
+            <p class="tagline">From Hong Kong • Global News on Tech, Economy & World Trends</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search news..." 
+                    aria-label="Search news articles"
+                >
+                <button id="searchBtn" aria-label="Submit search">🔍</button>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All News</button>
+                <button class="filter-btn" data-filter="latest_technologies">Technology</button>
+                <button class="filter-btn" data-filter="economic_trends_and_business_models">Economy</button>
+                <button class="filter-btn" data-filter="global_trends_world_news">World News</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h2>Topics</h2>
+                    <ul class="topic-list">
+                        <li><a href="#" class="topic-link active" data-filter="all">All News</a></li>
+                        <li><a href="#" class="topic-link" data-filter="latest_technologies">Latest Technologies</a></li>
+                        <li><a href="#" class="topic-link" data-filter="economic_trends_and_business_models">Economic Trends</a></li>
+                        <li><a href="#" class="topic-link" data-filter="global_trends_world_news">World News</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h2>Settings</h2>
+                    <label>
+                        <input type="checkbox" id="autoRefresh" checked>
+                        Auto-refresh (60s)
+                    </label>
+                    <button id="refreshBtn" class="refresh-btn">🔄 Refresh Now</button>
+                </div>
+                <div class="sidebar-section">
+                    <h2>Sources Status</h2>
+                    <div id="sourceStatus" class="source-status">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="news-feed">
+                <div id="loadingIndicator" class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading latest news...</p>
+                </div>
+                <div id="newsFeed" class="articles-grid"></div>
+                <div id="noResults" class="no-results" style="display: none;">
+                    <p>No articles found. Try adjusting your search or filter.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Headlinea • Andrew Mou • News aggregator from Hong Kong | 
+            <a href="https://github.com" target="_blank">Source</a> | 
+            <a href="#" id="aboutLink">About</a>
+        </p>
+    </footer>
+
+    <!-- Modal for About -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>About Headlinea</h2>
+            <p>Headlinea is a responsive news aggregator that brings you the latest headlines from trusted sources across three key areas:</p>
+            <ul>
+                <li><strong>Latest Technologies:</strong> AI, emerging tech, startups, hardware, robotics</li>
+                <li><strong>Economic Trends:</strong> Markets, trade policy, business models, geopolitics</li>
+                <li><strong>Global Trends:</strong> World news, regional perspectives, breaking stories</li>
+            </ul>
+            <p><em>Built with care from Hong Kong for the global community.</em></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

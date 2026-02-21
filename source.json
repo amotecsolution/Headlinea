@@ -1,0 +1,149 @@
+{
+  "location": "Hong Kong",
+  "topics": {
+    "latest_technologies": [
+      {
+        "name": "TechCrunch",
+        "description": "Startups, product launches, venture capital, emerging tech",
+        "rss": "https://techcrunch.com/feed/",
+        "note": "Section feeds available (e.g., /fundings-exits/feed/)."
+      },
+      {
+        "name": "The Verge",
+        "description": "Consumer tech, science, culture of tech",
+        "rss": "https://www.theverge.com/rss/index.xml",
+        "note": "Subscriber full‑text feed available for paid subscribers."
+      },
+      {
+        "name": "Wired",
+        "description": "In‑depth reporting on emerging tech, science, security",
+        "rss": "https://www.wired.com/feed/rss",
+        "note": "Frequent longform pieces; poll less often to avoid duplicates."
+      },
+      {
+        "name": "MIT Technology Review",
+        "description": "Research → commercialization and implications of new tech",
+        "rss": "https://www.technologyreview.com/feed/",
+        "note": "Good for research‑to‑market signals and sector analysis."
+      },
+      {
+        "name": "IEEE Spectrum",
+        "description": "Engineering, hardware, robotics, telecoms",
+        "rss": "https://spectrum.ieee.org/rss/feeds",
+        "note": "Provides technical depth on non‑AI emerging technologies."
+      },
+      {
+        "name": "Ars Technica",
+        "description": "Tech policy, security, and deep technical reporting",
+        "rss": "https://arstechnica.com/feed/",
+        "note": "Useful for policy and security coverage beyond consumer headlines."
+      },
+      {
+        "name": "Nature News (technology & science)",
+        "description": "Research breakthroughs and science‑driven tech news",
+        "rss": "https://www.nature.com/nature/articles?type=article&format=rss",
+        "note": "High‑quality research reporting; consider translation for UX."
+      },
+      {
+        "name": "VentureBeat",
+        "description": "Business of tech, emerging categories, industry signals",
+        "rss": "http://feeds.venturebeat.com/VentureBeat",
+        "note": "Good for commercialization and market adoption stories."
+      }
+    ],
+    "economic_trends_and_business_models": [
+      {
+        "name": "Financial Times",
+        "description": "Global macro, trade, corporate strategy, high‑impact economics",
+        "rss": "https://www.ft.com/?format=rss",
+        "note": "Paywall applies; consider headlines + links or licensing."
+      },
+      {
+        "name": "Bloomberg",
+        "description": "Markets, macroeconomics, policy, business models",
+        "rss": "https://feeds.bloomberg.com/markets/news.rss",
+        "note": "Multiple section feeds exist (technology, politics, economics)."
+      },
+      {
+        "name": "The Economist",
+        "description": "Long‑form analysis on geopolitics, trade, and economic trends",
+        "rss": "https://www.economist.com/feeds/print-sections/77/technology.xml",
+        "note": "Often paywalled; use for analysis and trend signals."
+      },
+      {
+        "name": "Reuters Business",
+        "description": "Fast business wire and corporate news",
+        "rss": "https://www.reuters.com/tools/rss",
+        "note": "Wire style is ideal for timely ingestion and deduplication."
+      },
+      {
+        "name": "Wall Street Journal",
+        "description": "Corporate, trade, and regulatory coverage",
+        "rss": "https://www.wsj.com/xml/rss/3_7014.xml",
+        "note": "Paywall; use headlines and links unless licensed."
+      },
+      {
+        "name": "CNBC",
+        "description": "Markets, business headlines, and breaking economic news",
+        "rss": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+        "note": "Good for market‑moving headlines and TV‑driven stories."
+      },
+      {
+        "name": "FT Alphaville (FT Tech)",
+        "description": "Intersection of tech and finance; new business models",
+        "rss": "https://ftalphaville.ft.com/feed/",
+        "note": "Useful for fintech, platform economics, and trade policy analysis."
+      }
+    ],
+    "global_trends_world_news": [
+      {
+        "name": "Reuters World",
+        "description": "Fast, factual global reporting and wire updates",
+        "rss": "https://www.reuters.com/tools/rss",
+        "note": "Wire feeds are low‑latency and easy to poll frequently."
+      },
+      {
+        "name": "BBC World",
+        "description": "Broad global coverage and regional feeds",
+        "rss": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "note": "Multiple regional and topic feeds available."
+      },
+      {
+        "name": "Associated Press World",
+        "description": "Breaking global news wire",
+        "rss": "https://apnews.com/hub/world/rss.xml",
+        "note": "Fast updates; good for headline aggregation."
+      },
+      {
+        "name": "Al Jazeera English",
+        "description": "Global south perspective and geopolitics",
+        "rss": "https://www.aljazeera.com/xml/rss/all.xml",
+        "note": "Offers alternative regional lens on global events."
+      },
+      {
+        "name": "New York Times World",
+        "description": "In‑depth reporting and investigative world coverage",
+        "rss": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+        "note": "High‑quality features; paywall/licensing considerations."
+      },
+      {
+        "name": "The Guardian World",
+        "description": "Analysis, features, and global reporting",
+        "rss": "https://www.theguardian.com/world/rss",
+        "note": "Open RSS; useful for commentary and investigative pieces."
+      },
+      {
+        "name": "Al Jazeera Economy",
+        "description": "Global economic stories with regional context",
+        "rss": "https://www.aljazeera.com/economy/rss.xml",
+        "note": "Good cross‑over between global trends and economic impact."
+      }
+    ]
+  },
+  "notes": {
+    "deduplication": "Normalize by canonical_url, title hash, and published_at timestamp.",
+    "polling_recommendation": "Wire feeds (Reuters/AP) every 1–5 minutes; analysis outlets every 15–60 minutes.",
+    "paywalls": "FT, Economist, NYT, WSJ often paywalled — show headline + summary and link to original unless licensed.",
+    "attribution": "Always display source badge and link to canonical_url to respect copyright and provenance."
+  }
+}
